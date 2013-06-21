@@ -1,0 +1,122 @@
+/*----------------------------------------------------------------------------
+ Utilities
+----------------------------------------------------------------------------*/
+
+$base-spacing-unit: 20px;
+
+
+/* Clear Fixes
+--------------------------------------*/
+/**
+ * Clear Fix from @nicolas
+ * http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+%clearfix {
+  zoom:1; /* For IE 6/7 only */
+  &:before, &:after {
+      content: " ";
+      display: table;
+  }
+  &:after {
+      clear: both;
+  }
+}
+
+%overflow-hidden{overflow: hidden;}
+
+/* Alignment
+--------------------------------------*/
+%left  {float: left;}
+%right {float: right;}
+
+/* Text Alignment
+--------------------------------------*/
+%txt-left    {text-align: left;}
+%txt-right   {text-align: right;}
+%txt-center  {text-align: center;}
+%txt-justify {text-align: justify;}
+
+/* Global Padding
+--------------------------------------*/
+%pad-all         {padding: $base-spacing-unit;}
+%pad-all--narrow {padding: $base-spacing-unit - ($base-spacing-unit / 2);}
+%pad-all--thick  {padding: $base-spacing-unit + ($base-spacing-unit / 2);}
+%pad-none        {padding: 0 !important;}
+
+/* Global Margin
+--------------------------------------*/
+%margin-all         {margin: $base-spacing-unit;}
+%margin-all--narrow {margin: $base-spacing-unit - ($base-spacing-unit / 2);}
+%margin-all--thick  {margin: $base-spacing-unit + ($base-spacing-unit / 2);}
+%margin-none        {margin: 0 !important;}
+
+/* Font weights
+--------------------------------------*/
+%weight--light      {font-weight: 300;}
+%weight--normal     {font-weight: 400;}
+%weight--semibold   {font-weight: 600;}
+
+/* Image placement variations
+--------------------------------------*/
+%img--right{
+  float:right;
+  margin-bottom:$base-spacing-unit;
+  margin-left:$base-spacing-unit;
+}
+
+%img--left{
+  float:left;
+  margin-right: $base-spacing-unit;
+  margin-bottom: $base-spacing-unit;
+}
+
+%img--center{
+  display:block;
+  margin-right:auto;
+  margin-bottom: $base-spacing-unit;
+  margin-left:auto;
+}
+
+
+////////////////////////////////////////
+// Outputted Classes
+// Delete these if you prefer 
+// to just use the placeholders
+////////////////////////////////////////
+
+// Clear Fixes
+.cf {@extend %clearfix}
+
+.ofclear{@extend %overflow-hidden}
+
+// Alignment
+.left  {@extend %left};
+.right {@extend %right}
+
+// Text Alignment
+.txt-left    {@extend %txt-left}
+.txt-right   {@extend %txt-right}
+.txt-center  {@extend %txt-center}
+.txt-justify {@extend %txt-justify}
+
+// Global Padding
+.pad-all         {@extend %pad-all}
+.pad-all--narrow {@extend %pad-all--narrow}
+.pad-all--thick  {@extend %pad-all--thick}
+.pad-none        {@extend %pad-none}
+
+// Global Margin
+.margin-all         {@extend %margin-all}
+.margin-all--narrow {@extend %margin-all--narrow}
+.margin-all--thick  {@extend %margin-all--thick}
+.margin-none        {@extend %margin-none} 
+
+// Font weights
+.weight--light      {@extend %weight--light}
+.weight--normal     {@extend %weight--normal}
+.weight--semibold   {@extend %weight--semibold}
+
+// Image placement variations.
+.img--right{@extend %img--right}
+.img--left{@extend %img--left}
+.img--center{@extend %img--center}

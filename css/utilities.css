@@ -1,0 +1,123 @@
+/*----------------------------------------------------------------------------
+ Utilities
+----------------------------------------------------------------------------*/
+/* Clear Fixes
+--------------------------------------*/
+/**
+ * Clear Fix from @nicolas
+ * http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+.cf {
+  zoom: 1;
+  /* For IE 6/7 only */
+}
+.cf:before, .cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+
+.ofclear {
+  overflow: hidden;
+}
+
+/* Alignment
+--------------------------------------*/
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* Text Alignment
+--------------------------------------*/
+.txt-left {
+  text-align: left;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-justify {
+  text-align: justify;
+}
+
+/* Global Padding
+--------------------------------------*/
+.pad-all {
+  padding: 20px;
+}
+
+.pad-all--narrow {
+  padding: 10px;
+}
+
+.pad-all--thick {
+  padding: 30px;
+}
+
+.pad-none {
+  padding: 0 !important;
+}
+
+/* Global Margin
+--------------------------------------*/
+.margin-all {
+  margin: 20px;
+}
+
+.margin-all--narrow {
+  margin: 10px;
+}
+
+.margin-all--thick {
+  margin: 30px;
+}
+
+.margin-none {
+  margin: 0 !important;
+}
+
+/* Font weights
+--------------------------------------*/
+.weight--light {
+  font-weight: 300;
+}
+
+.weight--normal {
+  font-weight: 400;
+}
+
+.weight--semibold {
+  font-weight: 600;
+}
+
+/* Image placement variations
+--------------------------------------*/
+.img--right {
+  float: right;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.img--left {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.img--center {
+  display: block;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+}
